@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EFEFEF;
+    margin: 0;
+}
+
+#MyLogo {
+    width: 100px;
+}
+
+#navBar {
+    background-color: rgba(93, 97, 192, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.divInNav {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#language {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+#language:hover {
+    background-color: white;
+    color: rgba(93, 97, 192, 0.9);
+}
+
+@media (max-width:860px) {
+    #MyLogo {
+        width: 70px;
+    }
+
+    #navBar {
+        height: 40px;
+    }
+
+    nav a {
+        font-size: 13px;
+        position: relative;
+        top: 5px;
+    }
+
+    .divInNav {
+        font-size: 13px;
+        position: relative;
+        top: 5px;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:600px) {
+    #MyLogo {
+        width: 60px;
+    }
+
+    #navBar {
+        height: 35px;
+    }
+
+    nav a {
+        font-size: 10px;
+        position: relative;
+        top: 4px;
+    }
+
+    .divInNav {
+        font-size: 10px;
+        position: relative;
+        top: 4px;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    #MyLogo {
+        width: 50px;
+    }
+
+    #navBar {
+        height: 30px;
+    }
+
+    nav a {
+        font-size: 8px;
+        position: relative;
+        top: 4px;
+    }
+
+    .divInNav {
+        font-size: 8px;
+        position: relative;
+        top: 4px;
+    }
+
+    input::placeholder {
+        font-size: 8px;
+        position: relative;
+        bottom: 2px;
+    }
+
+    #language {
+        border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+}
+
+#backgrounMovie {
+    position: relative;
+    opacity: 0.6;
+    padding: 0;
+    height: 95vh;
+    
+}
+
+#detail{
+    z-index: 12;
+}
+#trilelMovie {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 200px;
+    height: 270px;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 21%;
+    left: 10.5%;
+    cursor: pointer;
+    z-index: 31;
+}
+
+#nameMovie {
+    color: white;
+    font-size: 33px;
+}
+
+#dateMovie {
+    color: white;
+    opacity: 0.7;
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+.line1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    top: 17%;
+}
+.fa-circle-play {
+    cursor: pointer;
+}
+
+#notes {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    color: white;
+    font-size: 22px;
+}
+
+#contNote {
+    opacity: 0.7;
+    font-size: 18px;
+}
+
+#ouverView {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    color: white;
+    width: 30vw;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    #trilelMovie {
+       left: 60%;
+    }
+
+    .fa-heart {
+        left: 61%;
+    }
+    #nameMovie {
+        font-size: 3vw; 
+    }
+
+    #dateMovie {
+        font-size: 3vw;
+        padding: 0 10vw; 
+    }
+
+    .line1 {
+        left: 5%;
+        top: 9%;
+        
+    }
+
+    #notes{
+        left: 5%; 
+        top: 20%;
+    }
+    
+    #ouverView {
+        left: 5%; 
+        top: 25%;
+    }
+    #detail{
+        top: 70%;
+    }
+}
+
+footer {
+    height: 180px;
+    background-color: rgba(93, 97, 192, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.foterInfo span {
+    opacity: 0.7;
+    line-height: 25px;
+}
+
+.fa-brands {
+    padding: 7px;
+}
+
+#copyRight {
+    position: relative;
+    top: 30px;
+    right: 27px;
+}
+
+@media (max-width:860px){
+    footer span {
+        font-size: 13px;
+    }
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 160px;
+    }
+
+    #copyRight {
+        position: relative;
+        top: 20px;
+        right: 27px;
+        font-size: 14px;
+    }
+}

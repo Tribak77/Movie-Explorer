@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e3ff8bb9fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleListMovies.css">
+</head>
+
+<body>
+    <nav id="navBar">
+        <img src="imgs/MyLogo.png" alt="ShowPulse" id="MyLogo">
+        <a href="listMovies.html" id="home"> Movies</a>
+        <a href=""> TV Shows</a>
+        <a href="FavMovies.html" id="PageFav">My Favorites</a>
+        <input type="text" placeholder="search" id="search" onkeyup="MySearch()">
+        <div id="language" class="divInNav">EN</div>
+        <div id="LogIn" class="divInNav"> log In</div>
+    </nav>
+
+    <main>
+        <section id="CartSide">
+            <h3> Filter :</h3>
+            <span> Show Me </span><br>
+            <input type="radio" id="all" value="ShowAll" name="filter">
+            <label for="all"> Everything </label><br>
+            <input type="radio" id="adult" value="adult" name="filter">
+            <label for="adult"> Adult </label><br><br><br><br>
+            <h3> Sort By :</h3>
+            <input type="radio" id="titleA-Z" value="titleA-Z" name="Sort">
+            <label for="titleA-Z"> Titel (A-Z)</label><br>
+            <input type="radio" id="MostRated" value="MostRated" name="Sort">
+            <label for="MostRated"> Most rated</label>
+        </section>
+
+        <div id="allCarts">
+
+        </div>
+
+        <!-- <i class="fa-solid fa-angles-left fa-2xl" style="color: #000000;"></i>
+        <i class="fa-solid fa-angles-right fa-2xl" style="color: #000000;"></i> -->
+    </main>
+
+    <footer>
+        <div class="foterInfo">
+            <h4>RESOURCES</h4>
+            <span>Application</span><br>
+            <span> Documentation</span><br>
+            <span> Systems</span><br>
+            <span>FAQ</span><br>
+        </div>
+        <div class="foterInfo">
+            <h4> Social Media</h4>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <p id="copyRight">Copyright © ShowPulse</p>
+        </div>
+        <div class="foterInfo">
+            <h4>CONTACT</h4>
+            <span>+1 (323) 393-0684</span><br>
+            <span> movie@showpulse.com</span><br>
+            <span> info@showpulse.com</span><br>
+        </div>
+
+    </footer>
+    <script src="scriptFAV.js"></script>
+</body>
+
+</html>

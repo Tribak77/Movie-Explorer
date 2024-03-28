@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EFEFEF;
+    margin: 0;
+}
+
+#MyLogo {
+    width: 100px;
+}
+
+#navBar {
+    background-color: rgba(93, 97, 192, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#search {
+    border-radius: 10px;
+    height: 33px;
+    width: 250px;
+    text-indent: 10px;
+}
+
+.divInNav {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#language {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+#language:hover {
+    background-color: white;
+    color: rgba(93, 97, 192, 0.9);
+}
+
+@media (max-width:860px) {
+    #MyLogo {
+        width: 70px;
+    }
+
+    #navBar {
+        height: 40px;
+    }
+
+    nav a {
+        font-size: 13px;
+        position: relative;
+        top: 5px;
+    }
+
+    .divInNav {
+        font-size: 13px;
+        position: relative;
+        top: 5px;
+    }
+
+    #search {
+        width: 140px;
+        height: 20px;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:600px) {
+    #MyLogo {
+        width: 60px;
+    }
+
+    #navBar {
+        height: 35px;
+    }
+
+    nav a {
+        font-size: 10px;
+        position: relative;
+        top: 4px;
+    }
+
+    .divInNav {
+        font-size: 10px;
+        position: relative;
+        top: 4px;
+    }
+
+    #search {
+        width: 100px;
+        height: 17px;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    #MyLogo {
+        width: 50px;
+    }
+
+    #navBar {
+        height: 30px;
+    }
+
+    nav a {
+        font-size: 8px;
+        position: relative;
+        top: 4px;
+    }
+
+    .divInNav {
+        font-size: 8px;
+        position: relative;
+        top: 4px;
+    }
+
+    #search {
+        width: 60px;
+        height: 14px;
+    }
+
+    input::placeholder {
+        font-size: 8px;
+        position: relative;
+        bottom: 2px;
+    }
+
+    #language {
+        border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+}
+
+
+#CartSide {
+    background-color: white;
+    width: 200px;
+    height: 350px;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+    top: 80px;
+    left: 40px;
+    line-height: 22px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+#allCarts {
+    width: 77vw;
+    position: relative;
+    left: 265px;
+    top: -280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.triler {
+    width: 185px;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+}
+
+.CartFilm {
+    background-color: white;
+    width: 185px;
+    height: 375px;
+    line-height: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.name {
+    line-height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+}
+
+.fa-heart {
+    position: absolute;
+    left: 160px;
+    bottom: 114px;
+    cursor: pointer;
+}
+
+.fa-star,
+.note,
+.noteCount {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    padding-right: 10px;
+}
+
+.fa-ellipsis-vertical {
+    position: absolute;
+    left: 165px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 20px;
+
+}
+
+.noteCount,
+.date {
+    opacity: 0.7;
+}
+
+.date {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+}
+
+.fa-angles-left {
+    position: relative;
+    left: 310px;
+    top: -250px;
+    cursor: pointer;
+}
+
+.fa-angles-right {
+    position: relative;
+    left: 89%;
+    top: -250px;
+    cursor: pointer;
+}
+
+
+@media (max-width:860px) {
+    #CartSide {
+        width: 130px;
+        height: 310px;
+        font-size: 13px;
+        position: relative;
+        top: 6 0px;
+        left: 20px;
+    }
+
+    #allCarts {
+        width: 60vw;
+        position: relative;
+        left: 170px;
+        top: -250px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .triler {
+        width: 130px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .CartFilm {
+        background-color: white;
+        width: 130px;
+        height: 310px;
+    }
+
+    .name {
+        line-height: 14px;
+        position: absolute;
+        left: 10px;
+        bottom: 30px;
+        font-size: 14px;
+    }
+
+    .fa-heart {
+        position: absolute;
+        left: 110px;
+        bottom: 90px;
+        cursor: pointer;
+    }
+
+    .fa-star,
+    .note,
+    .noteCount {
+        position: relative;
+        left: 5px;
+        top: 5px;
+        padding-right: 5px;
+        font-size: 15px;
+    }
+
+    .fa-ellipsis-vertical {
+        position: absolute;
+        left: 115px;
+        bottom: 10px;
+        cursor: pointer;
+        width: 20px;
+
+    }
+
+    
+.fa-angles-left {
+    position: relative;
+    left: 210px;
+    top: -230px;
+    cursor: pointer;
+}
+
+.fa-angles-right {
+    position: relative;
+    left: 74%;
+    top: -230px;
+    cursor: pointer;
+}
+
+}
+
+footer {
+    height: 180px;
+    background-color: rgba(93, 97, 192, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.foterInfo span {
+    opacity: 0.7;
+    line-height: 25px;
+}
+
+.fa-brands {
+    padding: 7px;
+}
+
+#copyRight {
+    position: relative;
+    top: 30px;
+    right: 27px;
+}
+
+@media (max-width:860px){
+    footer span {
+        font-size: 13px;
+    }
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 160px;
+    }
+
+    #copyRight {
+        position: relative;
+        top: 20px;
+        right: 27px;
+        font-size: 14px;
+    }
+}
